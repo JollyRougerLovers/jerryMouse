@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>mouse search</title>
+        <link rel="icon" href="/cdn/pics/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/cdn/css/base.css"/>
+        <script type="text/javascript" src="/cdn/js/base.js"></script>
+    </head>
+    <body>
+        <div class="mouse_house_loading" id="mosue_load_screen">
+            <div class="mouse_loading_logo"></div>
+            <div class="mouse_loading_text">...loading...</div>
+        </div>
+        <div class="mouse_house_search" id="mosue_search_screen">
+            <div class="mouse_search">
+                <div class="mouse_search_searchBox">
+                    <div class="mouse_search_line">
+                        <div class="mouse_search_logo">
+                        </div>
+                        <div class="mouse_search_category">
+                            <input id="mouse_search_input_category" name="category" placeholder="Category">
+                            <div class="mouse_search_autocomplet_house" id="mouse_search_category_house">
+                                <div class="mouse_search_autocomplet_fillter">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mouse_search_place">
+                            <input id="mouse_search_input_location" name="location" placeholder="Location">
+                            <div class="mouse_search_autocomplet_house">
+                                <div class="mouse_search_autocomplet_fillter">
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="mouse_search_send">
+                            <button id="mouse_search_submit"><i class="mouse_search_icon">&#xf002;</i> Search</button>
+                        </div>                           
+                    </div>
+                </div>
+                <div class="mouse_search_searchResult" id="mouse_search_searchResult">
+                </div>               
+            </div>                        
+        </div>
+    </body>
+</html>

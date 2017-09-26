@@ -1,0 +1,152 @@
+
+@font-face {
+    font-family: 'Arimo-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: ur('/cdn/font/Arimo-Regular.eot');
+    src: url('/cdn/font/Arimo-Regular.eot?#iefix') format('eot'), 
+        url('/cdn/font/Arimo-Regular.woff') format('woff'), 
+        url('/cdn/font/Arimo-Regular.ttf') format('truetype'), 
+        url('/cdn/font/Arimo-Regular.svg#Arimo-Regular') format('svg');
+}
+
+@font-face {
+    font-family: AW;
+    src: url('/cdn/font/fontawesome-webfont.eot');
+    src: url('/cdn/font/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('/cdn/font/fontawesome-webfont.woff2') format('woff2'),
+        url('/cdn/font/fontawesome-webfont.woff') format('woff'),
+        url('/cdn/font/fontawesome-webfont.ttf') format('truetype'),
+        url('/cdn/font/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    position:absolute;
+    font-family:Arimo-Regular;
+    width:100%;
+    height:100%;
+    margin:0;
+    background-color:#fff;
+}
+input{
+    height:28px;   
+    background-color:#fff;
+    border-radius:2px;
+}
+input:hover{
+    box-shadow: inset #0082ff 0 0 2px 0;
+    border:#0082ff 1px solid;  
+}
+input:active{
+    box-shadow: inset #0082ff 0 0 2px 0;
+    border:#0082ff 1px solid; 
+}
+input:focus{
+    box-shadow: inset #008288 0 0 1px 0;
+    border:#0082ff 1px solid; 
+}
+button{
+    height:32px;
+    color:#fff;
+    background-color:#0082ff;
+    font-weight:bold;
+    font-size:19px;
+    border:#0082ff 0 solid;
+}
+
+input, .mouse_search_autocomplet_house{
+    border:#aaa 1px solid; 
+    width:180px;
+}
+.mouse_search_autocomplet_house{
+    height:80px;
+    background-color:#fff;
+    overflow-x:hidden;
+    overflow-y:auto;
+    display:none;
+}
+.mouse_house_search, .mouse_house_loading, .mouse_search_searchResult, .mouse_search_searchBox{
+    position:absolute;
+    width:100%;
+}
+.mouse_house_search, .mouse_house_loading{
+    height:100%;
+}
+.mouse_house_search{
+   display:none;
+}
+.mouse_search_searchBox{
+    z-index:200;
+}
+.mouse_search_line{
+    width:100%;
+    height:40px;
+    padding-top:20px;
+    border-bottom:1px #000 solid;
+    background-color:#e0e5e9;
+    z-index:100;
+}
+.mouse_loading_logo{
+    height:262px;
+    width:360px;
+    margin:auto;
+    background-image:url(/cdn/pics/hungry.gif);
+    background-size: 360px 262px;
+    background-repeat: no-repeat;
+}
+.mouse_loading_text{
+    display:none;
+    min-height:40px;
+    width:100%;
+    text-align:center;
+}
+
+.mouse_search_logo{
+    background-image:url(/cdn/pics/logo.png);
+    background-size: 50px 32px;
+    background-repeat: no-repeat;    
+    margin-left:40px;
+}
+.mouse_search_category, .mouse_search_place, .mouse_search_logo, .mouse_search_send{
+    float:left;
+    min-width:50px;
+    height:32px;
+    margin-right:10px;
+    z-index:200;
+}
+.mouse_search_icon{
+    font-family:AW;
+}
+.mouse_search_searchResult{
+    padding-top:160px;
+    z-index:100;
+}
+.mouse_search_searchResult_each{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.mouse_search_searchResult_title{
+    color:#0082ff;
+    font-family:Arimo-Regular;
+    font-weight:bold;
+}
+.mouse_search_searchResult_website_link{
+    color:#46c162;
+}
+.mouse_search_searchResult_description{
+    color:#858585;
+}
+.mouse_search_searchResult_phone{
+    cursor:pointer;
+}
+.mouse_search_searchResult_empty{
+    width:100%;
+    height:50px;
+    font-size:20px;
+    text-align:center;
+}
+
+
+
