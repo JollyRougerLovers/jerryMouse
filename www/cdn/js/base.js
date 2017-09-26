@@ -39,8 +39,10 @@ var mouseMaster = function () {
         if (parseInt(status) === 200) {
             if(typeof response.command == "undefined") return false;
             if(response.command == "search") return that.search_result(response);
+            if(response.command == "error") return that.error();
             if(response.command == "phone") return that.phone_change(response);            
         }
+            that.error();
     }
     /**
      * 
@@ -158,6 +160,9 @@ var mouseMaster = function () {
     this.load_hide=function(){
         document.getElementById('mosue_search_screen').style.display = "block";
         document.getElementById('mosue_load_screen').style.display = "none";
+    }
+    this.error=function(){
+        document.getElementById('mouse_search_searchResult').innerHTML = '<div class="mouse_search_searchResult_empty">'+"Houston, We've Had a Problem. "+'</div>';
     }
     /**
      * 
