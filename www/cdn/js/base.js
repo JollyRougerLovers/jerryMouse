@@ -162,7 +162,8 @@ var mouseMaster = function () {
         document.getElementById('mosue_load_screen').style.display = "none";
     }
     this.error=function(){
-        document.getElementById('mouse_search_searchResult').innerHTML = '<div class="mouse_search_searchResult_empty">'+"Houston, We've Had a Problem. "+'</div>';
+        document.getElementById('mouse_search_searchResult').innerHTML = '<div class="mouse_search_searchResult_empty">'+" Houston, I believe we've Had a Problem here ... "+'</div>';
+        that.load_hide();
     }
     /**
      * 
