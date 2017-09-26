@@ -14,6 +14,9 @@ class central_index {
     function __construct($request, $test) {
         header("Content-Type: application/json;charset=utf-8");
         $param = [];
+        /**
+         * safety check
+         */
         if (!isset($request['q']))
             return $this->error('10');
         if ($request['q'] == "location") {
@@ -41,6 +44,11 @@ class central_index {
         }else{
             $this->error('60');
         }
+        
+        /*
+        *  testrun or real run
+        * 
+        */
         if ($test == 1) {
             $this->test_get($query, $param);
         } else {
