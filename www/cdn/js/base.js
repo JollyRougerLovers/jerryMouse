@@ -125,6 +125,7 @@ var mouseMaster = function () {
         return out;
     }
     this.search_empty=function(){
+        that.load_hide();
         document.getElementById('mouse_search_searchResult').innerHTML = '<div class="mouse_search_searchResult_empty">Sorry, we have no results</div>';
         
     }    

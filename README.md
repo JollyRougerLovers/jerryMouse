@@ -5,3 +5,6 @@ I had no time to finnish the auto complet things. But already here.
 
 Live demo:
 https://clients.gidigi.com/webcom/
+
+!!! This search ireland !!!
+So you have to try Dublin, Cork ... etc
